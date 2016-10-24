@@ -1,0 +1,6 @@
+framework module Pods_NWA {
+  umbrella header "Pods-NWA-umbrella.h"
+
+  export *
+  module * { export * }
+}

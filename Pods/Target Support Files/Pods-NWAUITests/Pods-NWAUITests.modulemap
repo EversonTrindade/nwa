@@ -1,0 +1,6 @@
+framework module Pods_NWAUITests {
+  umbrella header "Pods-NWAUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
