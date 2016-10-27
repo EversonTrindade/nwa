@@ -6,7 +6,7 @@ target 'NWA' do
   use_frameworks!
 
   # Pods for NWA
-  pod 'Alamofire', '~> 4.0'
+  pod 'Alamofire'
   pod 'RealmSwift'
   pod 'SwiftyJSON'
   pod 'FacebookCore'

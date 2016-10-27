@@ -10,6 +10,7 @@
 		0B2FDC27696D3F9238934DF3 /* Pods_NWA.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE981E46FB7E989F9BFF7590 /* Pods_NWA.framework */; };
 		7A2BAAD2AFDEB97D069D48A1 /* Pods_NWA_NWATests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4933FF672721736E149D37C5 /* Pods_NWA_NWATests.framework */; };
 		928B8D903E64CFBB4415B611 /* Pods_NWA_NWAUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84B0106E741E6C534DD0D97D /* Pods_NWA_NWAUITests.framework */; };
+		EC29ADEC1DC292250087A909 /* GOTModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC29ADEB1DC292250087A909 /* GOTModel.swift */; };
 		EC3539FA1DB660CB00BE566B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3539F91DB660CB00BE566B /* LoginViewController.swift */; };
 		EC3539FC1DB69EAE00BE566B /* LoginProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3539FB1DB69EAE00BE566B /* LoginProtocol.swift */; };
 		EC3539FE1DB69EC300BE566B /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3539FD1DB69EC300BE566B /* LoginViewModel.swift */; };
@@ -61,6 +62,7 @@
 		CA0EF4785466F5F69748E9F6 /* Pods-NWA-NWAUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NWA-NWAUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-NWA-NWAUITests/Pods-NWA-NWAUITests.release.xcconfig"; sourceTree = "<group>"; };
 		CB769EE3FB49EA75C2542E36 /* Pods_NWATests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NWATests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE981E46FB7E989F9BFF7590 /* Pods_NWA.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NWA.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC29ADEB1DC292250087A909 /* GOTModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GOTModel.swift; sourceTree = "<group>"; };
 		EC3539F91DB660CB00BE566B /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		EC3539FB1DB69EAE00BE566B /* LoginProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginProtocol.swift; sourceTree = "<group>"; };
 		EC3539FD1DB69EC300BE566B /* LoginViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
@@ -142,6 +144,22 @@
 				CA0EF4785466F5F69748E9F6 /* Pods-NWA-NWAUITests.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		EC29ADE91DC291590087A909 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EC29ADEA1DC292000087A909 /* GOTModel */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EC29ADEA1DC292000087A909 /* GOTModel */ = {
+			isa = PBXGroup;
+			children = (
+				EC29ADEB1DC292250087A909 /* GOTModel.swift */,
+			);
+			path = GOTModel;
 			sourceTree = "<group>";
 		};
 		EC3539F81DB6609300BE566B /* LoginViewController */ = {
@@ -227,6 +245,7 @@
 		EC5385BC1DB16ED7008D2C2F /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				EC29ADE91DC291590087A909 /* Model */,
 				EC5385C01DB16F25008D2C2F /* Storyboards */,
 				EC5385BF1DB16F23008D2C2F /* ViewControllers */,
 				EC5385BE1DB16F21008D2C2F /* Extensions */,
@@ -566,6 +585,7 @@
 				EC5385C91DB17187008D2C2F /* HomeProtocol.swift in Sources */,
 				EC5385C71DB1713F008D2C2F /* HomeViewController.swift in Sources */,
 				EC3539FC1DB69EAE00BE566B /* LoginProtocol.swift in Sources */,
+				EC29ADEC1DC292250087A909 /* GOTModel.swift in Sources */,
 				EC3539FA1DB660CB00BE566B /* LoginViewController.swift in Sources */,
 				EC5385CB1DB171D5008D2C2F /* HomeViewModel.swift in Sources */,
 				ECF5AA3F1DB7E6FC00BD31DA /* Request.swift in Sources */,

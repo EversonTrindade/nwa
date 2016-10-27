@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "NWA/Core/Request.swift"
-            timestampString = "499031029.22982"
+            timestampString = "499292238.223074"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "47"
-            endingLineNumber = "47"
+            startingLineNumber = "45"
+            endingLineNumber = "45"
             landmarkName = "requestAPI(callType:successBlock:failureBlock:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -26,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "NWA/Core/Request.swift"
-            timestampString = "499030936.867544"
+            timestampString = "499292238.223074"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "33"
-            endingLineNumber = "33"
+            startingLineNumber = "48"
+            endingLineNumber = "48"
             landmarkName = "requestAPI(callType:successBlock:failureBlock:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -42,28 +42,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "NWA/Core/Request.swift"
-            timestampString = "499031289.485357"
+            timestampString = "499294006.584425"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "39"
-            endingLineNumber = "39"
+            startingLineNumber = "56"
+            endingLineNumber = "56"
             landmarkName = "requestAPI(callType:successBlock:failureBlock:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "NWA/Core/Request.swift"
-            timestampString = "499034742.94525"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "60"
-            endingLineNumber = "60"
-            landmarkName = "getServerURL(callType:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

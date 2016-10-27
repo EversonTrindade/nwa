@@ -19,7 +19,7 @@ class HomeViewModel: UIViewController, HomePresentation {
     
     func getMarvelService(successBlock: ((Void) -> ()), failureBlock: ((String?) -> ())){
         
-        Request.requestAPI(callType: .PublicComics, successBlock: { (transfers) in
+        Request.requestAPI(callType: .GOT, successBlock: { (transfers) in
         
             print("crl")
             

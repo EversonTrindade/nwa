@@ -6,7 +6,7 @@ PODS:
   - Bolts/AppLinks (1.8.4):
     - Bolts/Tasks
   - Bolts/Tasks (1.8.4)
-  - CryptoSwift (0.6.3)
+  - CryptoSwift (0.6.4)
   - FacebookCore (0.2.0):
     - Bolts (~> 1.8)
     - FBSDKCoreKit (~> 4.15)
@@ -20,11 +20,11 @@ PODS:
     - FacebookCore (~> 0.2)
     - FBSDKCoreKit (~> 4.15)
     - FBSDKShareKit (~> 4.15)
-  - FBSDKCoreKit (4.16.1):
+  - FBSDKCoreKit (4.17.0):
     - Bolts (~> 1.7)
-  - FBSDKLoginKit (4.16.1):
+  - FBSDKLoginKit (4.17.0):
     - FBSDKCoreKit
-  - FBSDKShareKit (4.16.1):
+  - FBSDKShareKit (4.17.0):
     - FBSDKCoreKit
   - Realm (2.0.2):
     - Realm/Headers (= 2.0.2)
@@ -35,7 +35,7 @@ PODS:
   - SwiftyJSON (3.1.1)
 
 DEPENDENCIES:
-  - Alamofire (~> 4.0)
+  - Alamofire
   - CryptoSwift
   - FacebookCore
   - FacebookLogin
@@ -47,18 +47,18 @@ DEPENDENCIES:
 SPEC CHECKSUMS:
   Alamofire: 7682d43245de14874acd142ec137b144aa1dd335
   Bolts: 8a7995239dbe724f9cba2248b766d48b7ebdd322
-  CryptoSwift: 623f81faf4bc34caf78b792f8625fda9fc309abd
+  CryptoSwift: 2cb9a11b942b443ca3316bdac2733ed6c6e16d4e
   FacebookCore: 2cb3f0fbff218e9d3119cec84bae983b232412de
   FacebookLogin: c9d606504735780a9e3002465a615512e0a691a5
   FacebookShare: 8e9ee8ea06505e6a1d3d719b0cc63e840fb8aaeb
-  FBSDKCoreKit: 6feac4e8921ccd7afa83fb1df6291dc6eec42c7c
-  FBSDKLoginKit: 469a56cebe2e1ed62b1621d0b155970fd6aac2d8
-  FBSDKShareKit: 53af0239b5bd2ebf191f32f75991245a208cc982
+  FBSDKCoreKit: 30a21d2d7b92984b3d80497113433c00824c35e9
+  FBSDKLoginKit: 42b7129ac0373ca99eaf4cbebf4d07bd42371f59
+  FBSDKShareKit: 9b573d03fbee36cbaf42d5bb1f2bc019e0d72347
   Realm: 0f5a194af0b7e6158b83db41b4ee1a00be7ddf1a
   RealmSwift: 0eb5070d851cba7c66e841ca756d83609dc78bc8
   SVProgressHUD: b0830714205bea1317ea1a2ebc71e5633af334d4
   SwiftyJSON: f0be2e604f83e8405a624e9f891898bf6ed4e019
 
-PODFILE CHECKSUM: bdab98851733dfc411e4d26ffd4beed6a9d33ce7
+PODFILE CHECKSUM: eb4466484750c06a4b9a38d3f553e130427481e7
 
 COCOAPODS: 1.1.0.rc.2
