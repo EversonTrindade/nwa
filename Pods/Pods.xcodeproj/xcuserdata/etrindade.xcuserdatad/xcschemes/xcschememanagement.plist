@@ -9,6 +9,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>AlamofireObjectMapper.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Bolts.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -49,6 +54,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>ObjectMapper.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-NWA.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -79,15 +89,15 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>SwiftyJSON.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>1978024ED098C0ADFD0776F8D7B2B25D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>21850ED1AB5044A1956AD0EA1F87AB78</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -97,7 +107,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>3C1B3DC4850543B361596620BA079E7E</key>
+		<key>402933F97C626BF2FEB29A32D3FD2280</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -112,12 +122,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>6181675BE61913EE6BBE2BD1CB58F0D8</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>733427059CE84FD9AE22EF95F4D81AD7</key>
+		<key>7998BD742D1F81CB8FA8F28C17F1A5F3</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -132,22 +137,22 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>8D2F83C680C5676C384800BC96CC5E33</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>94CD392436B4AF48F76C305985969CF7</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>9D0F2E5EA1B46A5D72FFD42B0B39DBBC</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>A8F77DC39F7D0CFE46DAA5C135D96A80</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C5CBCAA97E951CC882334464FBDF983D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D173ED319A918D3778308E66CF48E794</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -163,6 +168,11 @@
 			<true/>
 		</dict>
 		<key>FAD903AA880139BB16D284EF77B38F58</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FBD082A0D35F7917EAB9DD9D3CCA9976</key>
 		<dict>
 			<key>primary</key>
 			<true/>

@@ -1,5 +1,8 @@
 PODS:
   - Alamofire (4.0.1)
+  - AlamofireObjectMapper (4.0.0):
+    - Alamofire (~> 4.0)
+    - ObjectMapper (~> 2.0)
   - Bolts (1.8.4):
     - Bolts/AppLinks (= 1.8.4)
     - Bolts/Tasks (= 1.8.4)
@@ -26,26 +29,27 @@ PODS:
     - FBSDKCoreKit
   - FBSDKShareKit (4.17.0):
     - FBSDKCoreKit
-  - Realm (2.0.2):
-    - Realm/Headers (= 2.0.2)
-  - Realm/Headers (2.0.2)
-  - RealmSwift (2.0.2):
-    - Realm (= 2.0.2)
+  - ObjectMapper (2.2.0)
+  - Realm (2.0.3):
+    - Realm/Headers (= 2.0.3)
+  - Realm/Headers (2.0.3)
+  - RealmSwift (2.0.3):
+    - Realm (= 2.0.3)
   - SVProgressHUD (2.0.3)
-  - SwiftyJSON (3.1.1)
 
 DEPENDENCIES:
-  - Alamofire
+  - Alamofire (~> 4.0)
+  - AlamofireObjectMapper (~> 4.0)
   - CryptoSwift
   - FacebookCore
   - FacebookLogin
   - FacebookShare
   - RealmSwift
   - SVProgressHUD
-  - SwiftyJSON
 
 SPEC CHECKSUMS:
   Alamofire: 7682d43245de14874acd142ec137b144aa1dd335
+  AlamofireObjectMapper: 9faa3ce5a240efda1b209009a2d6e1e949227abc
   Bolts: 8a7995239dbe724f9cba2248b766d48b7ebdd322
   CryptoSwift: 2cb9a11b942b443ca3316bdac2733ed6c6e16d4e
   FacebookCore: 2cb3f0fbff218e9d3119cec84bae983b232412de
@@ -54,11 +58,11 @@ SPEC CHECKSUMS:
   FBSDKCoreKit: 30a21d2d7b92984b3d80497113433c00824c35e9
   FBSDKLoginKit: 42b7129ac0373ca99eaf4cbebf4d07bd42371f59
   FBSDKShareKit: 9b573d03fbee36cbaf42d5bb1f2bc019e0d72347
-  Realm: 0f5a194af0b7e6158b83db41b4ee1a00be7ddf1a
-  RealmSwift: 0eb5070d851cba7c66e841ca756d83609dc78bc8
+  ObjectMapper: 4060d739febae11ab0c6af8d786f98667c82e1bd
+  Realm: 5f008bfe3c8c47142eddfc30b8c1584cde22db24
+  RealmSwift: 5afb451f65b682242f272dbb52d5c6f6e343c980
   SVProgressHUD: b0830714205bea1317ea1a2ebc71e5633af334d4
-  SwiftyJSON: f0be2e604f83e8405a624e9f891898bf6ed4e019
 
-PODFILE CHECKSUM: eb4466484750c06a4b9a38d3f553e130427481e7
+PODFILE CHECKSUM: cf53b3fc38ba7c88cb35324574b19bf9dcd6e0d2
 
 COCOAPODS: 1.1.0.rc.2

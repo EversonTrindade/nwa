@@ -8,7 +8,8 @@
 
 import Alamofire
 import CryptoSwift
-import SwiftyJSON
+import AlamofireObjectMapper
+
 
 enum CallType {
 
@@ -27,7 +28,7 @@ struct ApiUrls {
     static let serverApi    = "http://gateway.marvel.com/"
     static let publicComics = "v1/public/comics"
     
-    static let publicGOT    = "https://api.myjson.com/bins/2a07y"
+    static let publicGOT    = "https://api.myjson.com/bins/12y56"
     
 }
 
@@ -42,30 +43,17 @@ struct Request {
             let urlString : URLConvertible = getServerURL(callType: callType)
 
             
-            Alamofire.request(urlString, method: .get, parameters: nil, encoding: JSONEncoding.default)
-                .validate()
-                .responseJSON{ response in
-                    
-                    if let j = response.result.value{
-                        
-                        switch callType{
-                        case .GOT:
-                            
-                            let json = JSON(j)
-                            
-                            if let resData = json["People"].array {
-                            
-                                print(resData)
-                            }
-                            
-                      
-                            successBlock(json as AnyObject?)
-                        default:
-                            print("opa")
-                        }
-                        
-                        
-                    }
+//            Alamofire.request(urlString, method: .get, parameters: nil, encoding: JSONEncoding.default)
+//                .validate()
+//                .responseObject{(URLResponse:(DataResponse<GOTModel>) in
+//            
+//
+//            }
+            
+            Alamofire.request(urlString, method: .get, parameters: nil, encoding: JSONEncoding.default).responseObject{(response: DataResponse<GOTModel>) in
+                
+                let gotPersons = response.result.value
+                
             }
             
             

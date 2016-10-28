@@ -10,13 +10,45 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "NWA/Core/Request.swift"
-            timestampString = "499292238.223074"
+            timestampString = "499379251.457739"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "45"
-            endingLineNumber = "45"
+            startingLineNumber = "53"
+            endingLineNumber = "53"
             landmarkName = "requestAPI(callType:successBlock:failureBlock:)"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "static NWA.Request.requestAPI (callType : NWA.CallType, successBlock : (Swift.Optional&lt;Swift.AnyObject&gt;) -&gt; (), failureBlock : (Swift.Optional&lt;Swift.String&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "NWA"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/etrindade/Documents/Tritone%20Projects/Everson/NWA/NWA/Core/Request.swift"
+                  timestampString = "499379653.242074"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "53"
+                  endingLineNumber = "53"
+                  offsetFromSymbolStart = "128">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "static NWA.Request.(requestAPI (callType : NWA.CallType, successBlock : (Swift.Optional&lt;Swift.AnyObject&gt;) -&gt; (), failureBlock : (Swift.Optional&lt;Swift.String&gt;) -&gt; ()) -&gt; ()).(closure #1)"
+                  moduleName = "NWA"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/etrindade/Documents/Tritone%20Projects/Everson/NWA/NWA/Core/Request.swift"
+                  timestampString = "499379653.244055"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "55"
+                  endingLineNumber = "55"
+                  offsetFromSymbolStart = "132">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -26,27 +58,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "NWA/Core/Request.swift"
-            timestampString = "499292238.223074"
+            timestampString = "499379162.636461"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "48"
-            endingLineNumber = "48"
-            landmarkName = "requestAPI(callType:successBlock:failureBlock:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "NWA/Core/Request.swift"
-            timestampString = "499294006.584425"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "56"
-            endingLineNumber = "56"
+            startingLineNumber = "54"
+            endingLineNumber = "54"
             landmarkName = "requestAPI(callType:successBlock:failureBlock:)"
             landmarkType = "7">
          </BreakpointContent>
