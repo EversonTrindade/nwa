@@ -8,7 +8,9 @@ target 'NWA' do
   # Pods for NWA
   pod 'Alamofire', '~> 4.0'
   pod 'RealmSwift'
-  pod 'AlamofireObjectMapper', '~> 4.0'
+  
+  pod 'SwiftyJSON'
+
   pod 'FacebookCore'
   pod 'FacebookLogin'
   pod 'FacebookShare'

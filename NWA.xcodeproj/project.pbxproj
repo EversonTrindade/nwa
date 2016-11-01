@@ -10,6 +10,9 @@
 		0B2FDC27696D3F9238934DF3 /* Pods_NWA.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE981E46FB7E989F9BFF7590 /* Pods_NWA.framework */; };
 		7A2BAAD2AFDEB97D069D48A1 /* Pods_NWA_NWATests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4933FF672721736E149D37C5 /* Pods_NWA_NWATests.framework */; };
 		928B8D903E64CFBB4415B611 /* Pods_NWA_NWAUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84B0106E741E6C534DD0D97D /* Pods_NWA_NWAUITests.framework */; };
+		EC06F2CA1DC93D4B00693C07 /* HomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC06F2C91DC93D4B00693C07 /* HomeCell.swift */; };
+		EC06F2CC1DC93D8400693C07 /* HomeCellProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC06F2CB1DC93D8400693C07 /* HomeCellProtocol.swift */; };
+		EC06F2CE1DC93DCF00693C07 /* HomeCellModelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC06F2CD1DC93DCF00693C07 /* HomeCellModelView.swift */; };
 		EC29ADEC1DC292250087A909 /* GOTModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC29ADEB1DC292250087A909 /* GOTModel.swift */; };
 		EC3539FA1DB660CB00BE566B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3539F91DB660CB00BE566B /* LoginViewController.swift */; };
 		EC3539FC1DB69EAE00BE566B /* LoginProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3539FB1DB69EAE00BE566B /* LoginProtocol.swift */; };
@@ -62,6 +65,9 @@
 		CA0EF4785466F5F69748E9F6 /* Pods-NWA-NWAUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NWA-NWAUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-NWA-NWAUITests/Pods-NWA-NWAUITests.release.xcconfig"; sourceTree = "<group>"; };
 		CB769EE3FB49EA75C2542E36 /* Pods_NWATests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NWATests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE981E46FB7E989F9BFF7590 /* Pods_NWA.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NWA.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC06F2C91DC93D4B00693C07 /* HomeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeCell.swift; sourceTree = "<group>"; };
+		EC06F2CB1DC93D8400693C07 /* HomeCellProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeCellProtocol.swift; sourceTree = "<group>"; };
+		EC06F2CD1DC93DCF00693C07 /* HomeCellModelView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeCellModelView.swift; sourceTree = "<group>"; };
 		EC29ADEB1DC292250087A909 /* GOTModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GOTModel.swift; sourceTree = "<group>"; };
 		EC3539F91DB660CB00BE566B /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		EC3539FB1DB69EAE00BE566B /* LoginProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginProtocol.swift; sourceTree = "<group>"; };
@@ -144,6 +150,16 @@
 				CA0EF4785466F5F69748E9F6 /* Pods-NWA-NWAUITests.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		EC06F2C81DC93C9D00693C07 /* HomeCell */ = {
+			isa = PBXGroup;
+			children = (
+				EC06F2C91DC93D4B00693C07 /* HomeCell.swift */,
+				EC06F2CB1DC93D8400693C07 /* HomeCellProtocol.swift */,
+				EC06F2CD1DC93DCF00693C07 /* HomeCellModelView.swift */,
+			);
+			path = HomeCell;
 			sourceTree = "<group>";
 		};
 		EC29ADE91DC291590087A909 /* Model */ = {
@@ -292,6 +308,7 @@
 				EC5385C61DB1713F008D2C2F /* HomeViewController.swift */,
 				EC5385C81DB17187008D2C2F /* HomeProtocol.swift */,
 				EC5385CA1DB171D5008D2C2F /* HomeViewModel.swift */,
+				EC06F2C81DC93C9D00693C07 /* HomeCell */,
 			);
 			path = HomeViewController;
 			sourceTree = "<group>";
@@ -586,9 +603,12 @@
 				EC5385C71DB1713F008D2C2F /* HomeViewController.swift in Sources */,
 				EC3539FC1DB69EAE00BE566B /* LoginProtocol.swift in Sources */,
 				EC29ADEC1DC292250087A909 /* GOTModel.swift in Sources */,
+				EC06F2CA1DC93D4B00693C07 /* HomeCell.swift in Sources */,
 				EC3539FA1DB660CB00BE566B /* LoginViewController.swift in Sources */,
 				EC5385CB1DB171D5008D2C2F /* HomeViewModel.swift in Sources */,
+				EC06F2CC1DC93D8400693C07 /* HomeCellProtocol.swift in Sources */,
 				ECF5AA3F1DB7E6FC00BD31DA /* Request.swift in Sources */,
+				EC06F2CE1DC93DCF00693C07 /* HomeCellModelView.swift in Sources */,
 				ECF5AA411DB805BF00BD31DA /* Reachability.swift in Sources */,
 				EC3539FE1DB69EC300BE566B /* LoginViewModel.swift in Sources */,
 			);

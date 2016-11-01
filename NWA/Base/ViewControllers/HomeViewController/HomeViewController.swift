@@ -9,12 +9,14 @@
 import UIKit
 import FBSDKLoginKit
 import SVProgressHUD
+import RealmSwift
 
 
 class HomeViewController: UIViewController {
 
     let homeViewRepresentation = HomeViewModel()
     
+    @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -43,6 +45,26 @@ class HomeViewController: UIViewController {
         
         present(alertController, animated: true, completion: nil)
 
+    }
+    @IBAction func getDatabase(_ sender: AnyObject) {
+        
+        let realm = try! Realm()
+
+        let all = realm.objects(GOTModel.self)
+        print(all)
+        
+        let each = realm.object(ofType: GOTModel.self, forPrimaryKey: "Jon Snow")
+        
+        if (each != nil){
+            
+            try! realm.write {
+                
+                realm.delete(each!)
+            }
+        }
+            
+        
+        
         
         
     }
@@ -53,9 +75,6 @@ class HomeViewController: UIViewController {
         self.homeViewRepresentation.getMarvelService(successBlock: { () in
                         
             print("foi")
-
-            
-            
         }) { (stringError) in
             print("Error Pow")
                 

@@ -7,42 +7,17 @@
 //
 
 import Foundation
-import ObjectMapper
+import RealmSwift
 
-class GOTModel: Mappable{
-
-    var persons: [Persons]?
+class GOTModel: Object{
     
-    required init?(map: Map) {
-        
-    }
+    dynamic var name = ""
+    dynamic var origin = ""
+    dynamic var house = ""
+    dynamic var title = ""
+    dynamic var image = ""
     
-    func mapping(map: Map) {
-     
-        persons <- map["persons"]
-    }
-}
-
-class Persons: Mappable{
-    
-    var name:   String?
-    var house:  String?
-    var image:  String?
-    var origin: String?
-    var title:  String?
-    
-    required init?(map: Map) {
-        
-//        mapping(map: map)
-    }
-    
-    func mapping(map: Map) {
-        
-        name    <- map["name"]
-        house   <- map["house"]
-        image   <- map["image"]
-        origin  <- map["origin"]
-        title   <- map["title"]
-        
+    override static func primaryKey() -> String? {
+        return "name"
     }
 }

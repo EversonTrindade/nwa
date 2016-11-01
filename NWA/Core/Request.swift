@@ -8,7 +8,8 @@
 
 import Alamofire
 import CryptoSwift
-import AlamofireObjectMapper
+import RealmSwift
+import SwiftyJSON
 
 
 enum CallType {
@@ -41,19 +42,54 @@ struct Request {
         if Reachability.isConnectedToNetwork() {
             
             let urlString : URLConvertible = getServerURL(callType: callType)
-
             
-//            Alamofire.request(urlString, method: .get, parameters: nil, encoding: JSONEncoding.default)
-//                .validate()
-//                .responseObject{(URLResponse:(DataResponse<GOTModel>) in
-//            
-//
-//            }
+            Alamofire.request(urlString, method: .get)
+                .responseJSON{ response in
             
-            Alamofire.request(urlString, method: .get, parameters: nil, encoding: JSONEncoding.default).responseObject{(response: DataResponse<GOTModel>) in
-                
-                let gotPersons = response.result.value
-                
+                    let data = response.result
+                    
+                    switch data{
+                        
+                    case .success:
+//                        print("printa \(data.value)")
+                        
+                        let json = JSON(data.value)
+//                        print(json["persons"])
+                        
+                        for person in json["persons"]{
+                            
+//                            print(person.1["house"])
+                            
+                            let eachPerson = GOTModel()
+                            
+                            eachPerson.house = person.1["house"].string!
+                            eachPerson.name = person.1["name"].string!
+                            eachPerson.image = person.1["image"].string!
+                            eachPerson.title = person.1["title"].string!
+                            eachPerson.origin = person.1["origin"].string!
+                            
+                            let realm = try! Realm()
+                            
+                            try! realm.write {
+                                
+                                realm.add(eachPerson, update: true)
+                            }
+                            
+                            
+                            
+                            
+                        }
+                        
+                        
+                        break
+                    case .failure(let error):
+                        print(error)
+                        break
+                        
+                    }
+                    
+                    
+            
             }
             
             
