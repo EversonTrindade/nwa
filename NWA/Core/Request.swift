@@ -29,15 +29,15 @@ struct ApiUrls {
     static let serverApi    = "http://gateway.marvel.com/"
     static let publicComics = "v1/public/comics"
     
-    static let publicGOT    = "https://api.myjson.com/bins/12y56"
+    static let publicGOT    = "https://api.myjson.com/bins/1rlvi"
     
 }
 
 struct Request {
 
     static func requestAPI(callType: CallType,
-                           successBlock : @escaping ((AnyObject?) -> ()),
-                           failureBlock : (String?) -> ()){
+                           successBlock : @escaping ((JSON) -> ()),
+                           failureBlock : @escaping (String?) -> ()){
 
         if Reachability.isConnectedToNetwork() {
             
@@ -45,51 +45,31 @@ struct Request {
             
             Alamofire.request(urlString, method: .get)
                 .responseJSON{ response in
-            
-                    let data = response.result
                     
-                    switch data{
+                    switch response.result{
                         
                     case .success:
-//                        print("printa \(data.value)")
                         
-                        let json = JSON(data.value)
-//                        print(json["persons"])
+                        switch callType{
+                            
+                        case .GOT:
+                            successBlock(JSON(response.result.value))
+                            break
                         
-                        for person in json["persons"]{
-                            
-//                            print(person.1["house"])
-                            
-                            let eachPerson = GOTModel()
-                            
-                            eachPerson.house = person.1["house"].string!
-                            eachPerson.name = person.1["name"].string!
-                            eachPerson.image = person.1["image"].string!
-                            eachPerson.title = person.1["title"].string!
-                            eachPerson.origin = person.1["origin"].string!
-                            
-                            let realm = try! Realm()
-                            
-                            try! realm.write {
-                                
-                                realm.add(eachPerson, update: true)
-                            }
-                            
-                            
-                            
-                            
+                        default:
+                            print("OPs")
+                            break
                         }
                         
+                        break
+                    case .failure:
+                        
+                        failureBlock("Foi Mal, num vai da não")
                         
                         break
-                    case .failure(let error):
-                        print(error)
-                        break
-                        
                     }
                     
-                    
-            
+                
             }
             
             
@@ -97,7 +77,7 @@ struct Request {
             failureBlock("Sem Internet")
         }
     }
-    
+                    
     static func getServerURL(callType: CallType) -> String{
         
         switch callType {

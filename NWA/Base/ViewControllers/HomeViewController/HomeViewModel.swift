@@ -10,21 +10,25 @@ import UIKit
 import FBSDKLoginKit
 
 class HomeViewModel: UIViewController, HomePresentation {
-
+    
+    let countOfCharacters: NSInteger = GOTModel.getCountOfAllObjects()
+    
+    
     func logout() -> Void{
         
         let loginManager = FBSDKLoginManager()
         loginManager.logOut()
     }
     
-    func getMarvelService(successBlock: ((Void) -> ()), failureBlock: ((String?) -> ())){
+    func getMarvelService(successBlock: ((Void) -> ()), failureBlock: @escaping ((String?) -> ())){
         
         Request.requestAPI(callType: .GOT, successBlock: { (transfers) in
         
-            print("crl")
+            GOTModel.persistOrUpdateJsonFromService(json: transfers)
             
         }) { (stringError) in
             failureBlock(stringError)
         }
     }
+    
 }

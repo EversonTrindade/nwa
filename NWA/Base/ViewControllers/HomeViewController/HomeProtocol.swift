@@ -9,9 +9,11 @@
 import UIKit
 
 protocol HomePresentation{
-
+    
+    var countOfCharacters: NSInteger { get }
+    
     func logout() -> Void
  
-    func getMarvelService(successBlock: ((Void) -> ()), failureBlock: ((String?) -> ()))
+    func getMarvelService(successBlock: ((Void) -> ()), failureBlock: @escaping ((String?) -> ()))
     
 }

@@ -12,9 +12,9 @@ import SVProgressHUD
 import RealmSwift
 
 
-class HomeViewController: UIViewController {
+class HomeViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
-    let homeViewRepresentation = HomeViewModel()
+    let homeViewRepresentation = HomeViewModel() as HomePresentation
     
     @IBOutlet weak var tableView: UITableView!
     
@@ -46,25 +46,8 @@ class HomeViewController: UIViewController {
         present(alertController, animated: true, completion: nil)
 
     }
+    
     @IBAction func getDatabase(_ sender: AnyObject) {
-        
-        let realm = try! Realm()
-
-        let all = realm.objects(GOTModel.self)
-        print(all)
-        
-        let each = realm.object(ofType: GOTModel.self, forPrimaryKey: "Jon Snow")
-        
-        if (each != nil){
-            
-            try! realm.write {
-                
-                realm.delete(each!)
-            }
-        }
-            
-        
-        
         
         
     }
@@ -79,6 +62,28 @@ class HomeViewController: UIViewController {
             print("Error Pow")
                 
         }
+    }
+    
+    //MARK: UITableViewDelegate/Datasource
+    func numberOfSections(in tableView: UITableView) -> Int {
+        
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        
+        return homeViewRepresentation.countOfCharacters
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "HomeCell", for: indexPath) as? HomeCell
+        self.tableView(tableView, willDisplay: cell!, forRowAt: indexPath)
+        return cell!
+    }
+    
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        
         
     }
     
